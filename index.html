@@ -9,33 +9,111 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Manage landing page</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/script.js" defer></script>
   </head>
-  <body>
-    <header>
+  <body class="font-BeVietnamPro">
+    <header class="pt-6">
       <nav class="container relative p-6 mx-auto">
         <div class="flex justify-between items-center">
           <div class="pt-2">
             <img src="./images/logo.svg" alt="logo" />
           </div>
-          <div class="md:flex space-x-8 hidden">
+
+          <!-- Navigation Links -->
+          <div class="space-x-8 hidden md:flex text-[13px]">
             <a class="hover:text-darkGrayishBlue" href="#">Pricing</a>
             <a class="hover:text-darkGrayishBlue" href="#">Product</a>
             <a class="hover:text-darkGrayishBlue" href="#">About Us </a>
             <a class="hover:text-darkGrayishBlue" href="#">Careers </a>
             <a class="hover:text-darkGrayishBlue" href="#">Community</a>
           </div>
+
+          <!-- Desktop CTA -->
           <a
-            class="bg-brightRed rounded-full pt-2 px-6 p-3 text-white hover:bg-brightRedLight hidden md:block"
+            class="bg-brightRed rounded-full px-6 py-3 text-[13px] text-white hover:bg-brightRedLight hidden md:block shadow-[0_15px_15px_-15px_rgba(0,0,0,0.5)]"
             href="#"
-            >Get Started
-          </a>
+            >Get Started</a
+          >
+
+          <!-- Hamburger Button -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div class="mobile-menu-overlay" id="menu-overlay"></div>
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+            <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+            <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero-section">
+        <div
+          class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+        >
+          <!-- Left column -->
+          <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+            <h1
+              class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+            >
+              Bring everyone together to build better products.
+            </h1>
+            <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+              Manage makes it simple for software teams to plan day-to-day tasks
+              while keeping the larger team goals in view.
+            </p>
+            <div class="flex justify-center md:justify-start">
+              <a
+                href="#"
+                class="px-6 py-3 text-white bg-brightRed rounded-full text-[13px] hover:bg-brightRedLight flex items-center justify-center shadow-[0_15px_15px_-15px_rgba(0,0,0,0.5)]"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+          <!-- Right column/Image -->
+          <div class="md:w-1/2">
+            <img src="./images/illustration-intro.svg" alt="illustration" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features-section">
+        <div
+          class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+        >
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
