@@ -426,5 +426,115 @@
     </main>
 
     <!-- Footer Section -->
+    <footer class="bg-veryDarkBlue">
+      <div class="container mx-auto px-6 py-10">
+        <!-- Main Footer Content -->
+        <div
+          class="flex flex-col-reverse justify-between space-y-8 md:flex-row md:space-y-0"
+        >
+          <!-- Logo and Social Links Container -->
+          <div
+            class="flex flex-col-reverse items-center justify-between space-y-8 md:flex-col md:items-start md:space-y-0 md:mx-6"
+          >
+            <!-- Logo -->
+            <div class="mt-8 md:mt-0">
+              <img src="./images/logo-white.svg" class="h-7" alt="logo" />
+            </div>
+            <!-- Social Links -->
+            <div class="flex space-x-4 md:mt-8">
+              <a href="#" class="group">
+                <img
+                  src="./images/icon-facebook.svg"
+                  alt="Facebook"
+                  class="h-6 transition-all duration-200 group-hover:brightness-0 group-hover:[filter:invert(42%)_sepia(93%)_saturate(135%)_hue-rotate(338deg)_brightness(119%)_contrast(119%)]"
+                />
+              </a>
+              <a href="#" class="group">
+                <img
+                  src="./images/icon-youtube.svg"
+                  alt="YouTube"
+                  class="h-6 transition-all duration-200 group-hover:brightness-0 group-hover:[filter:invert(42%)_sepia(93%)_saturate(1352%)_hue-rotate(338deg)_brightness(119%)_contrast(119%)]"
+                />
+              </a>
+              <a href="#" class="group">
+                <img
+                  src="./images/icon-twitter.svg"
+                  alt="Twitter"
+                  class="h-6 transition-all duration-200 group-hover:brightness-0 group-hover:[filter:invert(42%)_sepia(93%)_saturate(1352%)_hue-rotate(338deg)_brightness(119%)_contrast(119%)]"
+                />
+              </a>
+              <a href="#" class="group">
+                <img
+                  src="./images/icon-pinterest.svg"
+                  alt="Pinterest"
+                  class="h-6 transition-all duration-200 group-hover:brightness-0 group-hover:[filter:invert(42%)_sepia(93%)_saturate(1352%)_hue-rotate(338deg)_brightness(119%)_contrast(119%)]"
+                />
+              </a>
+              <a href="#" class="group">
+                <img
+                  src="./images/icon-instagram.svg"
+                  alt="Instagram"
+                  class="h-6 transition-all duration-200 group-hover:brightness-0 group-hover:[filter:invert(42%)_sepia(93%)_saturate(1352%)_hue-rotate(338deg)_brightness(119%)_contrast(119%)]"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Navigation Links -->
+          <div
+            class="flex justify-around space-x-32 md:space-x-8 lg:space-x-32"
+          >
+            <!-- First Column -->
+            <div class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-brightRed">Home</a>
+              <a href="#" class="hover:text-brightRed">Pricing</a>
+              <a href="#" class="hover:text-brightRed">Products</a>
+              <a href="#" class="hover:text-brightRed">About</a>
+            </div>
+            <!-- Second Column -->
+            <div class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-brightRed">Careers</a>
+              <a href="#" class="hover:text-brightRed">Community</a>
+              <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+            </div>
+          </div>
+
+          <!-- Newsletter and Copyright -->
+          <div class="flex flex-col space-y-6 md:justify-between md:ml-6">
+            <form id="newsletter-form" novalidate>
+              <div class="flex flex-col space-y-2">
+                <div class="flex space-x-3">
+                  <div class="flex-1 relative">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="w-full rounded-full px-4 py-2 focus:outline-none transition-all duration-200"
+                      placeholder="Updates in your inbox…"
+                      required
+                    />
+                    <p
+                      class="hidden text-brightRed text-xs italic absolute left-4 -bottom-5"
+                      id="error-message"
+                    >
+                      Please insert a valid email
+                    </p>
+                  </div>
+                  <button
+                    type="submit"
+                    class="py-2 text-white px-6 bg-brightRed rounded-full focus:outline-none hover:bg-brightRedLight whitespace-nowrap disabled:opacity-75 transition-all duration-200"
+                  >
+                    Go
+                  </button>
+                </div>
+              </div>
+            </form>
+            <p class="text-gray-400 text-sm text-center md:text-right">
+              Copyright 2020. All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
