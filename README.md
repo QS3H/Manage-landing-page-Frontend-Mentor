@@ -11,10 +11,8 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -31,46 +29,27 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Screenshot%202025-03-01%20011259.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site](https://qs3h.github.io/Manage-landing-page-Frontend-Mentor/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
+- tailwindcss
+- JavaScript
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+In this project I learned a lot about tailwindcss and how to use it to create a responsive and visually appealing landing page. I also learned how to use CSS custom properties to create a consistent and reusable design system.
 
 ### Useful resources
 
@@ -78,6 +57,4 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-
-## Acknowledgments
+- Frontend Mentor - [@QS3H](https://www.frontendmentor.io/profile/QS3H)
