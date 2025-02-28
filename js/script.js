@@ -164,4 +164,42 @@ document.addEventListener("DOMContentLoaded", () => {
       slides.style.transition = "transform 300ms ease";
     }, 50);
   });
+
+  // After the window.resize event listener, add keyboard navigation
+
+  // Add tabindex to make slider focusable
+  slider.setAttribute("tabindex", "0");
+  slider.setAttribute("role", "region");
+  slider.setAttribute("aria-label", "Testimonial Slider");
+
+  // Handle keyboard navigation
+  slider.addEventListener("keydown", (e) => {
+    switch (e.key) {
+      case "ArrowLeft":
+        e.preventDefault();
+        if (currentIndex > 0) {
+          updateSliderPosition(currentIndex - 1);
+        }
+        break;
+      case "ArrowRight":
+        e.preventDefault();
+        if (currentIndex < dots.length - 1) {
+          updateSliderPosition(currentIndex + 1);
+        }
+        break;
+    }
+  });
+
+  // Pause auto-advance when slider is focused
+  slider.addEventListener("focus", () => {
+    clearInterval(slideInterval);
+  });
+
+  // Resume auto-advance when slider loses focus
+  slider.addEventListener("blur", () => {
+    slideInterval = setInterval(() => {
+      const nextIndex = (currentIndex + 1) % dots.length;
+      updateSliderPosition(nextIndex);
+    }, 5000);
+  });
 });
