@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [solution on Frontend Mentor](https://www.frontendmentor.io/solutions/manage-landing-page-solution-with-tailwindcss-reOp9uVoUK)
 - Live Site URL: [live site](https://qs3h.github.io/Manage-landing-page-Frontend-Mentor/)
 
 ## My process
