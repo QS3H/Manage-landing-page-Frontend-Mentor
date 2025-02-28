@@ -202,4 +202,62 @@ document.addEventListener("DOMContentLoaded", () => {
       updateSliderPosition(nextIndex);
     }, 5000);
   });
+
+  const form = document.getElementById("newsletter-form");
+  const emailInput = document.getElementById("email");
+  const errorMessage = document.getElementById("error-message");
+  const submitButton = form.querySelector('button[type="submit"]');
+
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email.toLowerCase());
+  };
+
+  const handleSuccess = () => {
+    // Temporarily disable the button and show loading state
+    submitButton.disabled = true;
+    const originalText = submitButton.textContent;
+    submitButton.textContent = "Sending...";
+
+    // Simulate API call (remove setTimeout in production)
+    setTimeout(() => {
+      // Reset form and button state
+      form.reset();
+      submitButton.disabled = false;
+      submitButton.textContent = originalText;
+
+      // Show success state
+      emailInput.classList.add("bg-green-50");
+      emailInput.value = "Thanks for subscribing!";
+
+      // Reset success state after 3 seconds
+      setTimeout(() => {
+        emailInput.classList.remove("bg-green-50");
+        emailInput.value = "";
+      }, 3000);
+    }, 1000);
+  };
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const email = emailInput.value.trim();
+
+    // Clear previous states
+    emailInput.classList.remove("border-brightRed", "border-2", "bg-green-50");
+    errorMessage.classList.add("hidden");
+
+    if (!email || !validateEmail(email)) {
+      emailInput.classList.add("border-brightRed", "border-2");
+      errorMessage.classList.remove("hidden");
+      return;
+    }
+
+    handleSuccess();
+  });
+
+  emailInput.addEventListener("input", () => {
+    // Remove error states when user starts typing
+    emailInput.classList.remove("border-brightRed", "border-2", "bg-green-50");
+    errorMessage.classList.add("hidden");
+  });
 });
