@@ -9,6 +9,13 @@
   background-position: 10% 50%;
 }
 
+body {
+  background-image: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 120% -20%;
+}
+
 /* Mobile Menu Styles */
 .mobile-menu-overlay {
   position: fixed;
@@ -131,12 +138,6 @@
   body {
     background-position: top -50px right -50px;
     background-size: 500px;
-  }
-
-  body::before {
-    width: 500px;
-    height: 500px;
-    right: -150px;
   }
 
   #cta {
